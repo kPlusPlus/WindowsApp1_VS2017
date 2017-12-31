@@ -40,9 +40,10 @@ namespace WindowsFormsApp1
 
             textBox1.Text += "time 1 " + dt1 + Environment.NewLine;
             textBox1.Text += "time 2 " + dt2 + Environment.NewLine;
+            TimeSpan duration = dt2 - dt1;  //TimeSpan.Parse( dt1.ToString() ) ;
 
             
-            textBox1.Text += "razlika " + dt2.Add(-1 * dt1) + Environment.NewLine;
+            textBox1.Text += "razlika " + duration + Environment.NewLine;
 
         }
     }
